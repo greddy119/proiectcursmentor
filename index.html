@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>style</title>
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="https://burgercraft.md/css/main.css">-->
+<!--    <link href="jq/jquery.selectBox.css" rel="stylesheet" type="text/css" />-->
+
+</head>
+<body >
+
+
+<div class="container container-for-fixed burger-craft" id="burger-craft">
+ <!--   <script type="text/javascript">
+        //scroll page to First category on scroll down (with mouse or key down)
+        function burgerScroll() {
+            window.craftBurgerAnchor = "burger-craft";
+            if ($(window).width() > 767) {
+
+                let lastScrollTop = 0,
+                    scrollTo = 0;
+                setTimeout(function () {
+                    scrollTo = $('#' + window.craftBurgerAnchor).offset().top - 130;
+                }, 500);
+
+                $(window).on('scroll', function () {
+                    let st = $(this).scrollTop();
+                    if (st > lastScrollTop)
+                        if (st < scrollTo) {
+                            $('html, body').animate({
+                                scrollTop: scrollTo,
+                            }, 800, (function () {
+                                $('html, body').stop(true, true);
+                            }));
+                        }
+                    lastScrollTop = st;
+                });
+            }
+        }
+
+        burgerScroll();
+    </script>-->
+    <div class="row">
+        <div class="container">
+            <div class="left-side">
+                <div class="burger-item clone-div">
+                    <div class="label">1. Chifla</div>
+                    <div class="field-row burger-options" data-option="3">
+                        <div class="field-wrap">
+                            <select name="choose-chifla" class="craft_select chifla">
+                                <option value="38" data-addon-price="8" data-addon-grams="60">CHIFLA BRIOCHE</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-item clone-div">
+                    <div class="label">2. Carne</div>
+                    <div class="field-row burger-options" data-option="4">
+                        <div id="carne" class="field-wrap">
+                            <select name="choose-carne[]" class="craft_select carne">
+                                <option value="40" data-addon-price="35" data-addon-grams="150">P&Acirc;RJOALĂ VITĂ</option>
+                                <option value="41" data-addon-price="25" data-addon-grams="100">FILEU PUI PANE</option>
+                                <option value="79" data-addon-price="25" data-addon-grams="100">FILEU PUI GRILL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="add-item clone-item button carne">
+                        <span class="plus-icon"></span>
+                        <span class="text">Adaugă item</span>
+                    </div>
+                </div>
+                <div class="burger-item clone-div">
+                    <div class="label">3. SOS CHIFLA</div>
+                    <div class="field-row burger-options" data-option="8">
+                        <div id="sos" class="field-wrap">
+                            <select name="choose-sos-chifla-jos[]" class="craft_select sos-chifla-jos">
+                                <option value="155" data-addon-price="0" data-addon-grams="0" >-</option>
+                                <option value="27" data-addon-price="4" data-addon-grams="20">SOS KETCHUP</option>
+                                <option value="29" data-addon-price="4" data-addon-grams="30">SOS TARTAR</option>
+                                <option value="30" data-addon-price="4" data-addon-grams="20">SOS MAIONEZĂ</option>
+                                <option value="34" data-addon-price="4" data-addon-grams="20">SOS USTUROI&amp;BBQ</option>
+                                <option value="35" data-addon-price="6" data-addon-grams="20">SOS SRIRACHA (iute)</option>
+                                <option value="48" data-addon-price="4" data-addon-grams="20">SOS CLASSY</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="add-item clone-item button">
+                        <span class="plus-icon"></span>
+                        <span class="text">Adaugă item</span>
+                    </div>
+                </div>
+                <div class="burger-item clone-div">
+                    <div class="label">5. Cascaval</div>
+                    <div class="field-row burger-options" data-option="5">
+                        <div id="cascaval" class="field-wrap">
+                            <select name="choose-cascaval[]" class="craft_select cascaval">
+                                <option value="156" data-addon-price="0" data-addon-grams="0">-</option>
+                                <option value="24" data-addon-price="12" data-addon-grams="20">CAȘCAVAL &quot;CHEDDAR&quot;</option>
+                                <option value="33" data-addon-price="15" data-addon-grams="25">CAȘCAVAL DORBLU</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="add-item clone-item button">
+                        <span class="plus-icon"></span>
+                        <span class="text">Adaugă item</span>
+                    </div>
+                </div>
+                <div class="burger-item clone-div">
+                    <div class="label">6. Topping</div>
+                    <div class="field-row burger-options" data-option="6">
+                        <div id="topping" class="field-wrap">
+                            <select name="choose-topping[]" class="craft_select topping">
+                                <option value="157" data-addon-price="0" data-addon-grams="0">-</option>
+                                <option value="22" data-addon-price="12" data-addon-grams="10">BACON CROCANT</option>
+                                <option value="23" data-addon-price="10" data-addon-grams="40">OU PRĂJIT</option>
+                                <option value="25" data-addon-price="2" data-addon-grams="10">CEAPĂ MARIN.</option>
+                                <option value="42" data-addon-price="4" data-addon-grams="20">CEAPĂ CARAMEL.</option>
+                                <option value="43" data-addon-price="4" data-addon-grams="30">CASTRAVETI MURATI</option>
+                                <option value="51" data-addon-price="4" data-addon-grams="20">CASTRAVEȚI PROASPEȚI</option>
+                                <option value="50" data-addon-price="5" data-addon-grams="40">ROȘII</option>
+                                <option value="52" data-addon-price="5" data-addon-grams="15">ICEBERG</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="add-item clone-item button ">
+                        <span class="plus-icon"></span>
+                        <span class="text">Adaugă item</span>
+                    </div>
+                </div>
+                <div class="personal-name-block field-wrap">
+                    <input type="text" name="personal_name" placeholder="Numește-ți burgerul 🍔" id="personal_name">
+                </div>
+                <hr class="totals-del">
+
+
+                <div class="craft-btns">
+
+                    <button type="button" class="reset btn-2">Incepe de la zero</button>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <div class="burger-images" id="burgerbuild">
+                    <!--<div class="burger-image burger-top-image burger-header" data-option="3">
+                        <span class="image-description">CHIFLA BRIOCHE</span>
+                        <img src="test/asset-1.svg" alt="CHIFLA BRIOCHE" title="CHIFLA BRIOCHE">
+                    </div>
+                    <div class="burger-image carne" data-option="4">
+                        <span class="image-description">P&Acirc;RJOALĂ VITĂ</span>
+                        <img src="test/pirjoala-de-vita.svg" alt="P&Acirc;RJOALĂ VITĂ" title="P&Acirc;RJOALĂ VITĂ">
+                    </div>
+                    <div class="burger-image burger-bottom-image burger-footer" data-option="3">
+                        <span class="image-description">CHIFLA BRIOCHE</span>
+                        <img src="test/asset-23.svg" alt="CHIFLA BRIOCHE" title="CHIFLA BRIOCHE">
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
